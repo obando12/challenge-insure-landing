@@ -50,7 +50,7 @@ img {
       grid-template-columns: 1fr;
 }
 
-/* header-navigation */
+/* Nested `nav` block */
 .nav {
   width: 100%;
   height: 80px;
@@ -65,7 +65,7 @@ img {
           justify-content: space-between;
 }
 
-/* header-slide */
+/* Nested `slide` block */
 .slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,12 +112,12 @@ img {
   margin-bottom: 37px;
 }
 
-/* header-image mobile version */
+/* Nested image mobile version */
 .intro-mobile {
   margin: auto;
 }
 
-/*header-image desktop version */
+/* Nested image desktop version */
 .intro-desktop {
   display: none;
 }
@@ -140,7 +140,7 @@ img {
   margin-bottom: 85px;
 }
 
-/* Nested cards block */
+/* Nested `cards` block */
 .cards {
   display: -ms-grid;
   display: grid;
