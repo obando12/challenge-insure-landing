@@ -51,6 +51,7 @@ ul {
 hr {
   margin: 40px auto;
   max-width: 330px;
+
   @include laptop() {
     max-width: 100%;
   }
@@ -67,7 +68,7 @@ img {
 }
 
 .container {
-  max-width: 327px; // 87%;
+  max-width: 327px;
   margin: auto;
 
   @include tablet() {
@@ -95,9 +96,9 @@ img {
   top: 0;
   z-index: 5;
 }
+
 .nav {
   width: 100%;
-  // height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,6 +108,7 @@ img {
     border: none;
     padding: 0;
     margin: 0;
+
     @include tablet() {
       display: none;
     }
@@ -124,6 +126,14 @@ img {
   &__items {
     display: flex;
     text-transform: uppercase;
+
+    @include tablet() {
+      font-size: 12px;
+    }
+
+    @include laptop() {
+      font-size: 16px;
+    }
   }
 
   &__item {
@@ -154,6 +164,7 @@ img {
     background-image: url(../images/bg-pattern-mobile-nav.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-size: 100%;
   }
 
   .nav-open .nav__items {
@@ -172,7 +183,7 @@ img {
   }
 
   .nav-open .btn--white {
-    width: 80%;
+    width: 300px;
     margin-top: 30px;
     height: 60px;
     background-color: transparent;
@@ -194,6 +205,8 @@ img {
 
   @include laptop() {
     background-image: none;
+    margin-top: 70px;
+
     &::before {
       content: "";
       background-image: url(../images/bg-pattern-intro-left-desktop.svg);
@@ -203,7 +216,6 @@ img {
       height: 100%;
       position: absolute;
       bottom: -300px;
-      // user-select: none;
     }
   }
 
@@ -216,7 +228,6 @@ img {
     height: 100%;
     position: absolute;
     bottom: -170px;
-    // user-select: none;
 
     @include laptop() {
       background-image: url(../images/bg-pattern-intro-right-desktop.svg);
@@ -228,15 +239,25 @@ img {
   &__title {
     font-size: 47px;
 
-    @include laptop() {
-      margin-top: 70px;
+    @include tablet() {
+      margin-top: 35px;
       position: relative;
-      font-size: 70px;
+      font-size: 405x;
+
       &::before {
         content: "";
         border: 1px solid $darkGrayishViolet;
         width: 28%;
         position: absolute;
+        top: -35px;
+      }
+    }
+
+    @include laptop() {
+      font-size: 67px;
+      margin-top: 70px;
+
+      &::before {
         top: -70px;
       }
     }
@@ -447,9 +468,11 @@ img {
     margin-bottom: 42px;
     color: $darkGrayishViolet;
   }
+
   &__item {
     margin-bottom: 20px;
   }
+
   &__link {
     color: $veryDarkViolet;
     &:hover {
@@ -473,6 +496,10 @@ img {
 /* card block */
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__title {
     color: $veryDarkViolet;
     font-size: 28px;
@@ -515,6 +542,7 @@ img {
     background-color: $veryLightGray;
     color: $DarkViolet;
     border-color: $DarkViolet;
+
     &:hover {
       background-color: $veryDarkViolet;
       color: $veryLightGray;
