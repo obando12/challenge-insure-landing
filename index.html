@@ -26,14 +26,35 @@
     <header class="header">
       <nav class="nav container">
         <img src="./images/logo.svg" alt="" />
-        <img src="./images/icon-hamburger.svg" alt="" />
+        <button class="nav__toggle">
+          <img
+            class="nav__hamburger"
+            src="./images/icon-hamburger.svg"
+            alt=""
+          />
+        </button>
+
+        <div class="nav__menu">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="">how we work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">account</a>
+            </li>
+          </ul>
+          <button class="btn btn--white">view plans</button>
+        </div>
       </nav>
 
       <img class="intro-mobile" src="./images/image-intro-mobile.jpg" alt="" />
 
       <div class="slide">
         <div class="slide__content container">
-          <div class="">
+          <div class="slide__info">
             <h1 class="slide__title">Humanizing your insurance.</h1>
             <p class="slide__text">
               Get your life insurance coverage easier and faster. We blend our
@@ -54,7 +75,7 @@
       </div>
     </header>
     <main>
-      <section class="features">
+      <section class="features container">
         <h2 class="features__title">We’re different</h2>
         <div class="cards">
           <div class="card">
@@ -99,14 +120,14 @@
       </section>
 
       <section class="work container">
-        <div>
+        <div class="work__content">
           <h2 class="work__title">Find out more about how we work</h2>
-          <button class="btn">How we work</button>
+          <button class="btn btn--medium">How we work</button>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__content">
+      <div class="footer__content container">
         <div class="footer__imgs">
           <img src="./images/logo.svg" alt="" />
           <div class="social">
@@ -127,43 +148,70 @@
 
         <hr />
 
-        <div>
+        <div class="footer__info">
           <div class="list-gp">
             <p class="list-gp__title">Our company</p>
             <ul>
-              <li class="list-gp__item">How we work</li>
-              <li class="list-gp__item">Why Insure?</li>
-              <li class="list-gp__item">check price</li>
-              <li class="list-gp__item">Reviews</li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">How we work</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Why Insure?</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">check price</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Reviews</a>
+              </li>
             </ul>
           </div>
           <div class="list-gp">
             <p class="list-gp__title">Help me</p>
             <ul>
-              <li class="list-gp__item">FAQ</li>
-              <li class="list-gp__item">Terms of use</li>
-              <li class="list-gp__item">Privacy policy</li>
-              <li>Cookies</li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">FAQ</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Terms of use</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Privacy policy</a>
+              </li>
+              <li><a class="list-gp__link" href="">Cookies</a></li>
             </ul>
           </div>
           <div class="list-gp">
             <p class="list-gp__title">Contact</p>
             <ul>
-              <li class="list-gp__item">Sales</li>
-              <li class="list-gp__item">Support</li>
-              <li class="list-gp__item">Live chat</li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Sales</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Support</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Live chat</a>
+              </li>
             </ul>
           </div>
           <div class="list-gp">
             <p class="list-gp__title">Others</p>
             <ul>
-              <li class="list-gp__item">Careers</li>
-              <li class="list-gp__item">Press</li>
-              <li class="list-gp__item">Licenses</li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Careers</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Press</a>
+              </li>
+              <li class="list-gp__item">
+                <a class="list-gp__link" href="">Licenses</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
